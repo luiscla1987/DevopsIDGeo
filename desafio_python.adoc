@@ -1,0 +1,5 @@
+= Desafio Python
+
+Imagine um retângulo, a figura geométrica, crie uma classe que represente este objeto.
+As propriedades, atributos, métodos ficam a seu critério, demonstre seu conhecimento. 
+Utilizar apenas a biblioteca padrão.
