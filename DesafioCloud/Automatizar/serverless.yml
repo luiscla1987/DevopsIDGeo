@@ -1,0 +1,27 @@
+service: deploy1
+
+frameworkVersion: '2'
+
+provider:
+  name: aws
+  runtime: python3.7
+  region: sa-east-1
+  lambdaHashingVersion: 20201221
+
+custom:
+  pythonRequirements:
+    dockerizePip: true
+
+package:
+  individually: false
+  exclude:
+    - package.json
+    - package-log.json
+    - node_modules/**
+
+functions:
+  uma_função_fictícia:
+    handler: handler.programa_desafio1 #definir o handler na AWS Lambda
+    
+plugins:
+  - serverless-python-requirements
